@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>50/30/20 Budget Calculator – Divide Your Income Into Needs, Wants and Savings</title>
+<meta name="description" content="Split your after-tax income into 50% Needs, 30% Wants, and 20% Savings with our interactive 50/30/20 Budget Calculator. Includes custom percentage presets.">
+<link rel="canonical" href="https://verdantfinpulse.com/budget-splitter.html">
+<meta property="og:title" content="50/30/20 Budget Calculator – Divide Your Income Into Needs, Wants and Savings">
+<meta property="og:description" content="Split your after-tax income into 50% Needs, 30% Wants, and 20% Savings with our interactive 50/30/20 Budget Calculator. Includes custom percentage presets.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://verdantfinpulse.com/budget-splitter.html">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "50/30/20 Budget Calculator", "url": "https://verdantfinpulse.com/budget-splitter.html", "description": "Split your after-tax income into 50% Needs, 30% Wants, and 20% Savings with our interactive 50/30/20 Budget Calculator. Includes custom percentage presets.", "applicationCategory": "FinanceApplication", "operatingSystem": "All", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+<style>:root,[data-theme="dark"]{--midnight:#0B0B0C;--forest:#1F3D2B;--dark-forest:#142A20;--white:#FFFFFF;--sand:#E8DCC4;--lime:#C6F432;--purple:#8B5CF6;--muted-green:#718574;--warm-bg:#F7F5EF;--subtle-border:#D8D8CC;--muted-text:#969B91;--bg-primary:#0B0B0C;--bg-elevated:#142A20;--bg-card-dark:#122119;--bg-input-panel:#F7F5EF;--bg-input-field:#FFFFFF;--text-main:#FFFFFF;--text-secondary:#E8DCC4;--text-muted:#969B91;--text-on-warm:#0B0B0C;--text-muted-on-warm:#525B54;--border-main:rgba(232,220,196,0.14);--border-warm:#D8D8CC;--nav-bg:rgba(11,11,12,0.84);--glow-lime:radial-gradient(circle,rgba(198,244,50,0.16) 0%,rgba(31,61,43,0.08) 45%,transparent 72%);--glow-purple:radial-gradient(circle,rgba(139,92,246,0.15) 0%,transparent 70%);}[data-theme="light"]{--bg-primary:#F7F5EF;--bg-elevated:#E8DCC4;--bg-card-dark:#1F3D2B;--bg-input-panel:#FFFFFF;--bg-input-field:#F7F5EF;--text-main:#0B0B0C;--text-secondary:#1F3D2B;--text-muted:#5A655D;--text-on-warm:#0B0B0C;--text-muted-on-warm:#5A655D;--border-main:#D8D8CC;--border-warm:#D8D8CC;--nav-bg:rgba(247,245,239,0.9);--glow-lime:radial-gradient(circle,rgba(198,244,50,0.28) 0%,rgba(31,61,43,0.05) 50%,transparent 72%);--glow-purple:radial-gradient(circle,rgba(139,92,246,0.12) 0%,transparent 70%);}*{box-sizing:border-box;margin:0;padding:0;}html{scroll-behavior:smooth;}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background-color:var(--bg-primary);background-image:radial-gradient(rgba(232,220,196,0.07) 1px,transparent 1px),radial-gradient(at 18% 12%,rgba(31,61,43,0.42) 0px,transparent 52%),radial-gradient(at 85% 22%,rgba(139,92,246,0.09) 0px,transparent 48%);background-size:26px 26px,100% 100%,100% 100%;color:var(--text-main);line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column;overflow-x:hidden;transition:background-color 0.25s ease,color 0.25s ease;}[data-theme="light"] body{background-image:radial-gradient(rgba(31,61,43,0.07) 1px,transparent 1px),radial-gradient(at 15% 10%,rgba(232,220,196,0.7) 0px,transparent 50%),radial-gradient(at 85% 18%,rgba(198,244,50,0.18) 0px,transparent 45%);}a{color:inherit;text-decoration:none;}.serif{font-family:Georgia,"Times New Roman",serif;}.serif-lime{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-weight:400;color:var(--lime);}[data-theme="light"] .serif-lime{color:#1F3D2B;background:var(--lime);padding:0 0.3rem;border-radius:6px;}.header{position:sticky;top:0;z-index:50;background:var(--nav-bg);backdrop-filter:blur(14px);border-bottom:1px solid var(--border-main);}.header-inner{max-width:1220px;margin:0 auto;padding:0.85rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;}.brand{display:inline-flex;align-items:center;gap:0.65rem;font-weight:700;font-size:1.05rem;color:var(--text-main);letter-spacing:-0.02em;background:none;border:none;cursor:pointer;}.brand-badge{width:32px;height:32px;border-radius:9px;background:var(--lime);color:#0B0B0C;display:inline-flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-style:italic;font-weight:700;font-size:1.05rem;box-shadow:0 0 18px rgba(198,244,50,0.35);}.nav-capsule{display:inline-flex;align-items:center;gap:0.25rem;background:rgba(20,42,32,0.65);border:1px solid var(--border-main);padding:0.28rem;border-radius:999px;}[data-theme="light"] .nav-capsule{background:rgba(232,220,196,0.65);}.nav-pill{padding:0.38rem 0.85rem;border-radius:999px;font-size:0.82rem;font-weight:500;color:var(--text-secondary);background:transparent;border:none;cursor:pointer;transition:all 0.18s ease;}.nav-pill:hover,.nav-pill.active{background:var(--forest);color:var(--lime);}.header-actions{display:inline-flex;align-items:center;gap:0.55rem;flex-wrap:wrap;}.ctrl-pill{background:rgba(20,42,32,0.75);color:var(--sand);border:1px solid var(--border-main);padding:0.4rem 0.75rem;border-radius:999px;font-size:0.78rem;font-weight:600;cursor:pointer;transition:all 0.18s ease;}[data-theme="light"] .ctrl-pill{background:#FFFFFF;color:#142A20;}.ctrl-pill:hover{border-color:var(--lime);}.cta-lime{background:var(--lime);color:#0B0B0C;border:1px solid var(--lime);padding:0.48rem 1rem;border-radius:999px;font-size:0.82rem;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:0.4rem;transition:transform 0.16s ease,box-shadow 0.16s ease;}.cta-lime:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(198,244,50,0.32);}.nav-back{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.8rem;font-weight:600;color:var(--lime);background:var(--dark-forest);border:1px solid rgba(198,244,50,0.35);padding:0.42rem 0.9rem;border-radius:999px;cursor:pointer;transition:all 0.16s ease;}.nav-back:hover{background:var(--forest);}.container{max-width:1220px;width:100%;margin:0 auto;padding:2rem 1.5rem 4rem;flex:1;}.ad-slot{width:100%;max-width:100%;min-height:100px;margin:1.75rem auto;padding:0.65rem 1rem;background:rgba(20,42,32,0.28);border:1px dashed rgba(232,220,196,0.22);border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;clear:both;}.ad-slot.ad-slot-compact{min-height:90px;margin:1.15rem auto 1.45rem;}[data-theme="light"] .ad-slot{background:rgba(232,220,196,0.35);border-color:#D8D8CC;}.ad-label{font-size:0.64rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);margin-bottom:0.25rem;user-select:none;}.ad-placeholder-inner{width:100%;min-height:54px;display:flex;align-items:center;justify-content:center;font-size:0.75rem;color:var(--text-muted);opacity:0.78;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;}.hero-split{display:grid;grid-template-columns:1.08fr 0.92fr;gap:2.5rem;align-items:center;padding:1.25rem 0 2.5rem;position:relative;}@media (max-width:960px){.hero-split{grid-template-columns:1fr;gap:2rem;}}.eyebrow-capsule{display:inline-flex;align-items:center;gap:0.5rem;padding:0.32rem 0.85rem;border-radius:999px;background:rgba(31,61,43,0.75);border:1px solid rgba(198,244,50,0.3);color:var(--sand);font-size:0.73rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:1.1rem;}.eyebrow-dot{width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 8px var(--lime);}.hero-headline{font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.35rem,4.5vw,3.8rem);font-weight:400;line-height:1.08;letter-spacing:-0.025em;color:var(--text-main);margin-bottom:1.1rem;}.hero-lead{font-size:1.04rem;color:var(--text-muted);max-width:520px;margin-bottom:1.65rem;}.hero-cta-row{display:flex;align-items:center;gap:0.85rem;flex-wrap:wrap;}.cta-secondary{background:transparent;color:var(--text-secondary);border:1px solid var(--border-main);padding:0.65rem 1.25rem;border-radius:999px;font-size:0.88rem;font-weight:600;cursor:pointer;transition:all 0.16s ease;}.cta-secondary:hover{border-color:var(--sand);background:rgba(232,220,196,0.08);}.hero-visual{position:relative;padding:1rem;}.hero-glow{position:absolute;inset:-12%;background:var(--glow-lime);filter:blur(28px);pointer-events:none;z-index:0;}.floating-stack{position:relative;z-index:1;display:flex;flex-direction:column;gap:0.9rem;}.dash-panel-dark{background:linear-gradient(155deg,#1F3D2B 0%,#0B0B0C 100%);border:1px solid rgba(198,244,50,0.25);border-radius:18px;padding:1.35rem;color:#FFFFFF;box-shadow:0 20px 45px rgba(0,0,0,0.45);}.dash-panel-sand{background:#E8DCC4;color:#0B0B0C;border:1px solid #D8D8CC;border-radius:16px;padding:1.1rem 1.25rem;margin-left:1.5rem;box-shadow:0 14px 32px rgba(0,0,0,0.28);}@media (max-width:640px){.dash-panel-sand{margin-left:0;}}.dash-tag{font-size:0.68rem;text-transform:uppercase;letter-spacing:0.07em;color:var(--sand);opacity:0.85;display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem;}.dash-big-num{font-size:1.9rem;font-weight:700;color:var(--lime);font-variant-numeric:tabular-nums;letter-spacing:-0.03em;}.mini-bars{display:grid;grid-template-columns:5fr 3fr 2fr;gap:0.35rem;margin:0.75rem 0 0.5rem;}.mini-bar-item{height:8px;border-radius:999px;}.feature-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;padding:1.15rem 1.35rem;background:rgba(20,42,32,0.55);border:1px solid var(--border-main);border-radius:16px;margin-bottom:1.75rem;}[data-theme="light"] .feature-strip{background:#FFFFFF;}@media (max-width:820px){.feature-strip{grid-template-columns:1fr 1fr;}}@media (max-width:480px){.feature-strip{grid-template-columns:1fr;}}.feat-item{display:flex;align-items:center;gap:0.7rem;font-size:0.84rem;font-weight:600;color:var(--text-secondary);}.feat-dot{width:26px;height:26px;border-radius:8px;background:rgba(198,244,50,0.14);border:1px solid rgba(198,244,50,0.35);color:var(--lime);display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;font-size:0.8rem;}[data-theme="light"] .feat-dot{background:#1F3D2B;color:var(--lime);}.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:1.5rem;flex-wrap:wrap;margin-bottom:1.4rem;}.section-title{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.7rem,3vw,2.35rem);font-weight:400;letter-spacing:-0.02em;}.search-bar{position:relative;min-width:290px;flex:1;max-width:420px;}.search-bar input{width:100%;padding:0.78rem 1rem 0.78rem 2.5rem;border-radius:999px;background:rgba(20,42,32,0.65);border:1px solid var(--border-main);color:var(--text-main);font-size:0.9rem;outline:none;transition:border-color 0.18s ease,box-shadow 0.18s ease;}[data-theme="light"] .search-bar input{background:#FFFFFF;color:#0B0B0C;}.search-bar input:focus{border-color:var(--lime);box-shadow:0 0 0 3px rgba(198,244,50,0.15);}.search-icon{position:absolute;left:0.95rem;top:50%;transform:translateY(-50%);color:var(--text-muted);pointer-events:none;}.filter-row{display:flex;align-items:center;justify-content:space-between;gap:0.6rem;flex-wrap:wrap;margin-bottom:1.4rem;}.chips{display:flex;flex-wrap:wrap;gap:0.42rem;}.chip{background:rgba(20,42,32,0.5);border:1px solid var(--border-main);color:var(--text-secondary);font-size:0.76rem;font-weight:600;padding:0.36rem 0.78rem;border-radius:999px;cursor:pointer;transition:all 0.15s ease;}[data-theme="light"] .chip{background:#FFFFFF;color:#142A20;border-color:#D8D8CC;}.chip:hover,.chip.active{background:var(--lime);color:#0B0B0C;border-color:var(--lime);}.dir-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:1.15rem;}.tool-card{grid-column:span 4;background:linear-gradient(160deg,rgba(31,61,43,0.48) 0%,rgba(11,11,12,0.92) 100%);border:1px solid var(--border-main);border-radius:18px;padding:1.4rem;display:flex;flex-direction:column;gap:0.65rem;cursor:pointer;position:relative;overflow:hidden;transition:transform 0.2s ease,border-color 0.2s ease,box-shadow 0.2s ease;}.tool-card.bento-wide{grid-column:span 6;}.tool-card.bento-sand{background:linear-gradient(145deg,#E8DCC4 0%,#F7F5EF 100%);color:#0B0B0C;border-color:#D8D8CC;}.tool-card.bento-forest{background:linear-gradient(145deg,#1F3D2B 0%,#142A20 100%);border-color:rgba(198,244,50,0.28);}[data-theme="light"] .tool-card:not(.bento-forest):not(.bento-sand){background:#FFFFFF;color:#0B0B0C;border-color:#D8D8CC;}@media (max-width:980px){.tool-card,.tool-card.bento-wide{grid-column:span 6;}}@media (max-width:640px){.tool-card,.tool-card.bento-wide{grid-column:span 12;}}.tool-card:hover{transform:translateY(-3px);border-color:var(--lime);box-shadow:0 14px 34px rgba(0,0,0,0.28),0 0 0 1px rgba(198,244,50,0.25);}.tool-top{display:flex;justify-content:space-between;align-items:center;gap:0.5rem;}.icon-box{width:38px;height:38px;border-radius:10px;background:rgba(198,244,50,0.14);border:1px solid rgba(198,244,50,0.3);color:var(--lime);display:inline-flex;align-items:center;justify-content:center;}.bento-sand .icon-box,[data-theme="light"] .tool-card:not(.bento-forest) .icon-box{background:#1F3D2B;color:var(--lime);}.badge{display:inline-flex;align-items:center;gap:0.35rem;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:var(--lime);background:rgba(31,61,43,0.85);border:1px solid rgba(198,244,50,0.25);padding:0.24rem 0.65rem;border-radius:999px;}.file-pill{font-size:0.68rem;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--text-muted);background:rgba(11,11,12,0.35);border:1px solid var(--border-main);padding:0.18rem 0.55rem;border-radius:999px;}.bento-sand .file-pill,[data-theme="light"] .file-pill{background:rgba(20,42,32,0.08);color:#1F3D2B;}.tool-name{font-family:Georgia,"Times New Roman",serif;font-size:1.25rem;font-weight:400;letter-spacing:-0.015em;}.tool-desc{font-size:0.86rem;color:var(--text-muted);flex:1;}.bento-sand .tool-desc{color:#3F4A42;}.tool-formula{font-size:0.74rem;font-weight:600;color:var(--lime);background:#142A20;border:1px solid rgba(198,244,50,0.25);padding:0.34rem 0.68rem;border-radius:8px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;display:flex;justify-content:space-between;align-items:center;}.lower-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.15rem;margin-top:1.5rem;}@media (max-width:820px){.lower-grid{grid-template-columns:1fr;}}.step-card{background:rgba(20,42,32,0.42);border:1px solid var(--border-main);border-radius:16px;padding:1.35rem;}[data-theme="light"] .step-card{background:#FFFFFF;}.step-num{font-family:Georgia,serif;font-style:italic;font-size:0.95rem;color:var(--lime);background:#1F3D2B;padding:0.15rem 0.55rem;border-radius:999px;display:inline-block;margin-bottom:0.65rem;}.privacy-banner{margin-top:2rem;background:linear-gradient(135deg,#1F3D2B 0%,#0B0B0C 100%);border:1px solid rgba(198,244,50,0.28);border-radius:20px;padding:2rem;color:#FFFFFF;display:grid;grid-template-columns:1.3fr 0.7fr;gap:1.5rem;align-items:center;}@media (max-width:820px){.privacy-banner{grid-template-columns:1fr;}}.breadcrumb{display:inline-flex;align-items:center;gap:0.45rem;font-size:0.78rem;color:var(--text-muted);margin-bottom:0.65rem;}.page-head{margin-bottom:1.25rem;}.page-title{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.75rem,3vw,2.45rem);font-weight:400;letter-spacing:-0.02em;margin-top:0.35rem;}.page-desc{color:var(--text-muted);font-size:0.95rem;margin-top:0.25rem;max-width:720px;}.calc-grid{display:grid;grid-template-columns:0.95fr 1.05fr;gap:1.5rem;align-items:start;}@media (max-width:860px){.calc-grid{grid-template-columns:1fr;}}.card-input{background:var(--bg-input-panel);color:var(--text-on-warm);border:1px solid var(--border-warm);border-radius:20px;padding:1.6rem;box-shadow:0 12px 30px rgba(0,0,0,0.16);}.card-input .card-title{font-size:0.88rem;font-weight:700;color:#142A20;margin-bottom:1.15rem;display:flex;justify-content:space-between;align-items:center;padding-bottom:0.65rem;border-bottom:1px solid #D8D8CC;}.card-input label{font-size:0.82rem;font-weight:700;color:#142A20;}.card-input .hint{font-size:0.74rem;color:#525B54;}.field{margin-bottom:1.05rem;}.field:last-child{margin-bottom:0;}.label-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:0.38rem;}.input-wrap{position:relative;display:flex;align-items:center;}.prefix,.suffix{position:absolute;color:#1F3D2B;font-size:0.9rem;font-weight:700;pointer-events:none;}.prefix{left:0.9rem;}.suffix{right:0.9rem;}.card-input input[type="number"],.card-input input[type="text"],.card-input select{width:100%;padding:0.72rem 0.9rem;font-size:0.96rem;font-family:inherit;font-weight:600;font-variant-numeric:tabular-nums;color:#0B0B0C;background:var(--bg-input-field);border:1.5px solid #D8D8CC;border-radius:10px;outline:none;transition:border-color 0.15s,box-shadow 0.15s;}.card-input input.has-prefix{padding-left:2.1rem;}.card-input input.has-suffix{padding-right:2.5rem;}.card-input input:focus,.card-input select:focus{border-color:#1F3D2B;box-shadow:0 0 0 3px rgba(31,61,43,0.16);}.range-slider{width:100%;margin-top:0.45rem;accent-color:#1F3D2B;cursor:pointer;height:5px;}.card-input .chip{background:#E8DCC4;color:#142A20;border-color:#D8D8CC;}.card-input .chip:hover,.card-input .chip.active{background:#1F3D2B;color:var(--lime);border-color:#1F3D2B;}.card-result{background:linear-gradient(160deg,#1F3D2B 0%,#142A20 55%,#0B0B0C 100%);color:#FFFFFF;border:1px solid rgba(198,244,50,0.28);border-radius:20px;padding:1.65rem;box-shadow:0 22px 48px rgba(0,0,0,0.35);position:relative;overflow:hidden;}.card-result::before{content:"";position:absolute;top:-60px;right:-60px;width:220px;height:220px;background:radial-gradient(circle,rgba(198,244,50,0.18) 0%,transparent 70%);pointer-events:none;}.card-result .card-title{font-size:0.84rem;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;color:var(--sand);margin-bottom:1.1rem;display:flex;justify-content:space-between;align-items:center;}.hero-stat{background:rgba(11,11,12,0.55);border:1px solid rgba(198,244,50,0.32);border-radius:14px;padding:1.25rem;margin-bottom:1.15rem;position:relative;}.hero-label{font-size:0.73rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--sand);}.hero-val{font-size:clamp(1.85rem,3.2vw,2.5rem);font-weight:800;color:var(--lime);letter-spacing:-0.03em;font-variant-numeric:tabular-nums;margin-top:0.15rem;}.hero-sub{font-size:0.82rem;color:#E8DCC4;opacity:0.88;margin-top:0.25rem;}.bar-wrap{margin:1.1rem 0;}.bar-track{height:12px;width:100%;background:rgba(255,255,255,0.1);border-radius:999px;overflow:hidden;display:flex;gap:2px;}.bar-seg{height:100%;transition:width 0.25s ease;}.bar-legend{display:flex;justify-content:space-between;font-size:0.76rem;color:var(--sand);margin-top:0.45rem;font-variant-numeric:tabular-nums;}.stat-list{display:flex;flex-direction:column;gap:0.55rem;}.stat-row{display:flex;justify-content:space-between;align-items:center;padding:0.65rem 0.85rem;background:rgba(11,11,12,0.42);border:1px solid rgba(232,220,196,0.12);border-radius:10px;font-size:0.86rem;}.stat-row .k{color:var(--sand);opacity:0.9;}.stat-row .v{color:#FFFFFF;font-weight:700;font-variant-numeric:tabular-nums;}.stat-row .v.green{color:var(--lime);}.stat-row .v.blue{color:#C4B5FD;}.formula-note{margin-top:1rem;padding:0.7rem 0.85rem;border-radius:10px;background:rgba(139,92,246,0.12);border:1px solid rgba(139,92,246,0.3);font-size:0.76rem;color:#E8DCC4;display:flex;justify-content:space-between;align-items:center;gap:0.5rem;flex-wrap:wrap;}.btn-row{display:flex;gap:0.65rem;margin-top:1.15rem;}.btn{flex:1;padding:0.68rem 1rem;font-size:0.82rem;font-weight:700;border-radius:999px;border:1px solid rgba(232,220,196,0.25);background:rgba(255,255,255,0.06);color:var(--sand);cursor:pointer;transition:all 0.16s ease;}.btn:hover{background:rgba(255,255,255,0.14);}.btn-primary{background:var(--lime);color:#0B0B0C;border-color:var(--lime);}.btn-primary:hover{box-shadow:0 6px 18px rgba(198,244,50,0.32);transform:translateY(-1px);}.seo-section-wrap{margin-top:2.25rem;display:flex;flex-direction:column;gap:1.25rem;}.seo-article{background:rgba(20,42,32,0.36);border:1px solid var(--border-main);border-radius:20px;padding:2rem;}[data-theme="light"] .seo-article{background:#FFFFFF;border-color:#D8D8CC;}.seo-block{margin-bottom:1.65rem;}.seo-block:last-child{margin-bottom:0;}.seo-block h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.3rem,2.2vw,1.62rem);font-weight:400;color:var(--text-main);margin-bottom:0.65rem;letter-spacing:-0.015em;}.seo-block p{font-size:0.94rem;color:var(--text-secondary);margin-bottom:0.75rem;line-height:1.68;}[data-theme="light"] .seo-block p{color:#2C3630;}.seo-block ul{margin:0.55rem 0 0.75rem 1.35rem;display:flex;flex-direction:column;gap:0.45rem;}.seo-block li{font-size:0.92rem;color:var(--text-secondary);line-height:1.6;}[data-theme="light"] .seo-block li{color:#2C3630;}.formula-box{margin:0.85rem 0;padding:0.85rem 1.1rem;border-radius:12px;background:#142A20;border-left:4px solid var(--lime);color:var(--lime);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.86rem;font-weight:600;overflow-x:auto;}.seo-link{color:var(--lime);text-decoration:underline;text-underline-offset:3px;font-weight:600;cursor:pointer;}[data-theme="light"] .seo-link{color:#1F3D2B;}.faq-section{background:rgba(20,42,32,0.36);border:1px solid var(--border-main);border-radius:20px;padding:2rem;}[data-theme="light"] .faq-section{background:#FFFFFF;}.faq-list{display:flex;flex-direction:column;gap:0.75rem;margin-top:1rem;}.faq-item{border:1px solid var(--border-main);border-radius:12px;background:rgba(11,11,12,0.32);overflow:hidden;}[data-theme="light"] .faq-item{background:#F7F5EF;border-color:#D8D8CC;}.faq-item summary{padding:0.95rem 1.15rem;font-weight:700;font-size:0.94rem;color:var(--text-main);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem;}.faq-item summary::-webkit-details-marker{display:none;}.faq-item summary::after{content:"+";color:var(--lime);background:#1F3D2B;width:24px;height:24px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;}.faq-item[open] summary::after{content:"−";}.faq-body{padding:0 1.15rem 1rem;font-size:0.9rem;color:var(--text-secondary);line-height:1.62;}[data-theme="light"] .faq-body{color:#2C3630;}.related-section{margin-top:1.75rem;}.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:0.9rem;}@media (max-width:820px){.related-grid{grid-template-columns:1fr;}}.related-card{background:linear-gradient(155deg,rgba(31,61,43,0.55) 0%,rgba(11,11,12,0.9) 100%);border:1px solid var(--border-main);border-radius:14px;padding:1.15rem;display:flex;flex-direction:column;gap:0.35rem;transition:transform 0.16s ease,border-color 0.16s ease;cursor:pointer;}[data-theme="light"] .related-card{background:#FFFFFF;color:#0B0B0C;}.related-card:hover{transform:translateY(-2px);border-color:var(--lime);}.related-card h3{font-family:Georgia,serif;font-size:1.05rem;font-weight:400;color:var(--lime);}[data-theme="light"] .related-card h3{color:#1F3D2B;}.related-card p{font-size:0.82rem;color:var(--text-muted);}.empty-state{display:none;text-align:center;padding:2.5rem;background:rgba(20,42,32,0.4);border:1px dashed var(--border-main);border-radius:16px;color:var(--text-muted);}.footer{border-top:1px solid var(--border-main);background:rgba(11,11,12,0.6);padding:1.5rem;color:var(--text-muted);font-size:0.8rem;}[data-theme="light"] .footer{background:#E8DCC4;color:#142A20;}.footer-inner{max-width:1220px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.85rem;}.footer-links{display:flex;gap:0.6rem;flex-wrap:wrap;}.link-btn{background:none;border:none;color:inherit;font-size:0.78rem;font-weight:600;cursor:pointer;padding:0.22rem 0.45rem;border-radius:6px;}.link-btn:hover{color:var(--lime);background:#1F3D2B;}.toast{position:fixed;bottom:1.35rem;right:1.35rem;background:var(--lime);color:#0B0B0C;padding:0.68rem 1.1rem;border-radius:999px;font-size:0.82rem;font-weight:700;box-shadow:0 10px 28px rgba(0,0,0,0.4);opacity:0;transform:translateY(8px);pointer-events:none;transition:all 0.2s ease;z-index:100;}.toast.show{opacity:1;transform:translateY(0);}@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none !important;animation:none !important;}}html,body{max-width:100%;overflow-x:hidden;-webkit-text-size-adjust:100%;}.dual-hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.8rem;margin-bottom:1.1rem;}.triple-input-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.5rem;}.mobile-menu-toggle{display:none;align-items:center;justify-content:center;min-width:42px;min-height:42px;border-radius:10px;background:rgba(20,42,32,0.8);border:1px solid var(--border-main);color:var(--lime);font-size:1.1rem;cursor:pointer;}[data-theme="light"] .mobile-menu-toggle{background:#FFFFFF;color:#142A20;}.mobile-fab-top{position:fixed;bottom:1.1rem;left:1.1rem;z-index:45;background:#1F3D2B;color:var(--lime);border:1px solid rgba(198,244,50,0.4);border-radius:999px;padding:0.55rem 0.95rem;font-size:0.78rem;font-weight:700;box-shadow:0 8px 22px rgba(0,0,0,0.35);cursor:pointer;display:none;align-items:center;gap:0.35rem;}@media (max-width:768px){.header-inner{padding:0.7rem 1rem;gap:0.65rem;}.mobile-menu-toggle{display:inline-flex;}.nav-capsule{display:none;width:100%;order:4;justify-content:space-around;padding:0.35rem;margin-top:0.25rem;}.nav-capsule.mobile-open{display:flex;}.nav-pill{flex:1;text-align:center;min-height:40px;padding:0.45rem 0.5rem;}.header-actions{gap:0.4rem;margin-left:auto;}#active-route-pill{display:none;}.ctrl-pill,.nav-back,.cta-lime,.cta-secondary{min-height:42px;display:inline-flex;align-items:center;justify-content:center;}.container{padding:1.25rem 1rem 3rem;}.hero-split{padding:0.6rem 0 1.75rem;gap:1.5rem;}.hero-headline{font-size:clamp(1.95rem,7.5vw,2.6rem);line-height:1.12;}.hero-lead{font-size:0.95rem;margin-bottom:1.25rem;}.hero-cta-row{flex-direction:column;align-items:stretch;}.hero-cta-row .cta-lime,.hero-cta-row .cta-secondary{width:100%;justify-content:center;min-height:46px;font-size:0.92rem;}.hero-visual{padding:0.25rem 0;}.dash-panel-dark,.dash-panel-sand{padding:1.05rem;margin-left:0;}.search-bar{min-width:0;width:100%;max-width:100%;}.search-bar input,.card-input input[type="number"],.card-input input[type="text"],.card-input select{font-size:16px;min-height:46px;}.range-slider{height:8px;margin-top:0.65rem;}.chips{gap:0.45rem;}.chip{min-height:38px;padding:0.42rem 0.85rem;font-size:0.8rem;display:inline-flex;align-items:center;}.card-input,.card-result,.seo-article,.faq-section{padding:1.2rem;border-radius:16px;}.stat-row{flex-wrap:wrap;gap:0.25rem 0.6rem;padding:0.65rem 0.75rem;}.stat-row .v{margin-left:auto;}.btn-row{flex-direction:row;}.btn{min-height:46px;font-size:0.88rem;}.ad-slot{min-height:86px;padding:0.55rem 0.75rem;margin:1.25rem auto;}.ad-placeholder-inner{font-size:0.7rem;word-break:break-word;}.privacy-banner{padding:1.35rem;}.footer-inner{flex-direction:column;align-items:flex-start;}.mobile-fab-top.visible{display:inline-flex;}}@media (max-width:520px){.dual-hero-grid{grid-template-columns:1fr;}.triple-input-grid{grid-template-columns:1fr;}.brand span:last-child{font-size:0.94rem;}}</style>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="brand"><span class="brand-badge">F</span><span>FinPulse Financial Portal</span></a>
+    <div class="header-actions">
+      <select id="currency-select" class="ctrl-pill" aria-label="Currency"><option value="$">$ USD</option><option value="€">€ EUR</option><option value="£">£ GBP</option><option value="₹">₹ INR</option><option value="¥">¥ JPY</option></select>
+      <button type="button" id="theme-toggle" class="ctrl-pill">◐ Light Mode</button>
+      <a href="index.html" class="nav-back">← Back to index.html</a>
+    </div>
+  </div>
+</header>
+<main class="container">
+  <div class="page-head">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Income & Budgeting</span><span>/</span><span style="color:var(--lime)">50/30/20 Budget Calculator</span></div>
+    <div><span class="badge">Personal Finance</span></div>
+    <h1 class="page-title">50/30/20 Budget Calculator</h1>
+    <p class="page-desc">Divide your monthly net take-home income into Essential Needs, Lifestyle Wants, and Savings or Debt Payoff.</p>
+  </div>
+  <!-- ==================== AD PLACEMENT 1 (budget-ad-slot-1): After Calculator Introduction ==================== -->
+<aside id="budget-ad-slot-1" class="ad-slot ad-slot-compact" data-ad-slot="ad-slot-1" aria-label="Advertisement Placement 1">
+  <span class="ad-label">Advertisement</span>
+  <div class="ad-placeholder-inner">
+    <!-- PASTE AD NETWORK TAG / SCRIPT FOR BUDGET-AD-SLOT-1 HERE -->
+    <span>Reserved Ad Placement 1 (budget-ad-slot-1)</span>
+  </div>
+</aside>
+<!-- ==================== END AD PLACEMENT 1 (budget-ad-slot-1) ==================== -->
+  <div class="calc-grid">
+  <section class="card card-input">
+    <div class="card-title"><span>INPUT WORKSPACE · NET INCOME & RULE</span><span class="hint">Proportional split</span></div>
+    <div class="field">
+      <div class="label-row"><label for="bg-inc">Net Take-Home Income</label><span class="hint">After taxes & deductions</span></div>
+      <div class="input-wrap"><span class="prefix">$</span><input id="bg-inc" class="has-prefix" type="number" min="0" step="50" value="5500"></div>
+      <input id="bg-inc-range" class="range-slider" type="range" min="1000" max="20000" step="100" value="5500">
+    </div>
+    <div class="field">
+      <div class="label-row"><label for="bg-freq">Paycheck Frequency</label><span class="hint">Auto-normalized to monthly</span></div>
+      <select id="bg-freq">
+        <option value="1" selected>Monthly Income</option>
+        <option value="2.1666667">Bi-Weekly Paycheck (×26/yr)</option>
+        <option value="4.3333333">Weekly Paycheck (×52/yr)</option>
+        <option value="0.0833333">Annual Net Income (÷12)</option>
+      </select>
+    </div>
+    <div class="field">
+      <div class="label-row"><label>Allocation Framework Preset</label><span class="hint">Click to apply</span></div>
+      <div class="chips" id="bg-presets">
+        <button type="button" class="chip active" data-n="50" data-w="30" data-s="20">50/30/20 Standard</button>
+        <button type="button" class="chip" data-n="60" data-w="20" data-s="20">60/20/20 High Cost</button>
+        <button type="button" class="chip" data-n="50" data-w="20" data-s="30">50/20/30 Fire Saver</button>
+      </div>
+    </div>
+    <div class="field">
+      <div class="label-row"><label for="bg-n">Needs % / Wants % / Savings %</label><span class="hint" id="bg-sum-hint">Total: 100%</span></div>
+      <div class="triple-input-grid">
+        <div class="input-wrap"><input id="bg-n" class="has-suffix" type="number" min="0" max="100" value="50"><span class="suffix">%</span></div>
+        <div class="input-wrap"><input id="bg-w" class="has-suffix" type="number" min="0" max="100" value="30"><span class="suffix">%</span></div>
+        <div class="input-wrap"><input id="bg-s" class="has-suffix" type="number" min="0" max="100" value="20"><span class="suffix">%</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="card card-result">
+    <div class="card-title"><span>RESULTS WORKSPACE · ALLOCATION ARCHITECTURE</span><span>3-BUCKET MODEL</span></div>
+    <div class="hero-stat">
+      <div class="hero-label">Monthly Distributable Net Income</div>
+      <div class="hero-val" id="bg-out-mo">$5,500.00</div>
+      <div class="hero-sub" id="bg-out-yr">Annual Net Budget: $66,000.00</div>
+    </div>
+    <div class="bar-wrap">
+      <div class="bar-track">
+        <div id="bg-bar-n" class="bar-seg" style="width:50%;background:#C6F432"></div>
+        <div id="bg-bar-w" class="bar-seg" style="width:30%;background:#E8DCC4"></div>
+        <div id="bg-bar-s" class="bar-seg" style="width:20%;background:#8B5CF6"></div>
+      </div>
+      <div class="bar-legend">
+        <span id="bg-leg-n">Needs: 50%</span>
+        <span id="bg-leg-w">Wants: 30%</span>
+        <span id="bg-leg-s">Savings: 20%</span>
+      </div>
+    </div>
+    <div class="stat-list">
+      <div class="stat-row"><span class="k">Essential Needs (Housing, Groceries, Utilities)</span><span class="v green" id="bg-out-n">$2,750.00/mo</span></div>
+      <div class="stat-row"><span class="k">Lifestyle Wants (Dining, Travel, Leisure)</span><span class="v" id="bg-out-w">$1,650.00/mo</span></div>
+      <div class="stat-row"><span class="k">Savings & Investing (Wealth & Debt Payoff)</span><span class="v blue" id="bg-out-s">$1,100.00/mo</span></div>
+      <div class="stat-row"><span class="k">Annualized Savings Accumulation</span><span class="v green" id="bg-out-s-yr">$13,200.00/yr</span></div>
+    </div>
+    <div class="formula-note"><span>Formula: Bucket = Monthly Net × (Bucket % ÷ Total %)</span><span>Auto-Normalized</span></div>
+    <div class="btn-row">
+      <button type="button" class="btn" id="bg-reset">Reset</button>
+      <button type="button" class="btn btn-primary" id="bg-copy">Copy Plan</button>
+    </div>
+  </section>
+</div>
+  <!-- ==================== AD PLACEMENT 2 (budget-ad-slot-2): After Calculator Workspace ==================== -->
+<aside id="budget-ad-slot-2" class="ad-slot" data-ad-slot="ad-slot-2" data-ad-lazy="true" aria-label="Advertisement Placement 2">
+  <span class="ad-label">Advertisement</span>
+  <div class="ad-placeholder-inner">
+    <!-- PASTE AD NETWORK TAG / SCRIPT FOR BUDGET-AD-SLOT-2 HERE -->
+    <span>Reserved Ad Placement 2 (budget-ad-slot-2)</span>
+  </div>
+</aside>
+<!-- ==================== END AD PLACEMENT 2 (budget-ad-slot-2) ==================== -->
+    <div class="seo-section-wrap">
+      <article class="seo-article">
+        
+          <div class="seo-block">
+            <h2>Introduction to the 50/30/20 Budget Rule</h2>
+            <p>Many people abandon household budgets because tracking dozens of micro-categories quickly becomes exhausting. The <strong>50/30/20 budget rule</strong> solves that complexity by organizing your after-tax income into just three high-level buckets: <strong>50% for Essential Needs</strong>, <strong>30% for Lifestyle Wants</strong>, and <strong>20% for Savings and Debt Repayment</strong>. Instead of policing every coffee purchase, you maintain balance across the three macro pillars of personal finance.</p>
+          </div>
+          <div class="seo-block">
+            <h2>What Is the 50/30/20 Budget Method?</h2>
+            <p>Popularized in consumer finance as a proportional cash-flow framework, the 50/30/20 method is a <strong>flexible budgeting guideline rather than a rigid, universal financial rule</strong>. It starts with your net take-home income (the cash deposited into your bank account after taxes, payroll deductions, and employer benefits) and assigns target ceilings to your fixed obligations, discretionary lifestyle spending, and wealth-building contributions.</p>
+          </div>
+          <div class="seo-block">
+            <h2>Understanding the 50% Needs Category</h2>
+            <p>Your <strong>Needs (50%)</strong> bucket covers non-negotiable living expenses required to maintain housing, health, and employment. If you could not eliminate the expense during a temporary financial crunch without severe consequences, it belongs in Needs:</p>
+            <ul>
+              <li>Rent or mortgage payments, property taxes, and essential homeowners/renters insurance.</li>
+              <li>Basic utilities (electricity, heating, water, trash, and essential internet for work).</li>
+              <li>Essential groceries and household staples (excluding restaurant dining).</li>
+              <li>Healthcare premiums, prescriptions, and essential transportation to work.</li>
+              <li>Minimum required monthly payments on student loans, auto loans, or credit cards.</li>
+            </ul>
+          </div>
+          <div class="seo-block">
+            <h2>Understanding the 30% Wants Category</h2>
+            <p>Your <strong>Wants (30%)</strong> bucket encompasses discretionary choices that make life enjoyable but are not strictly required for survival or employment. Examples include restaurant dining, takeout, streaming subscriptions, hobby gear, concert tickets, gym memberships, vacations, and upgrading from a basic functional car or phone to a luxury model.</p>
+          </div>
+        
+        <!-- ==================== AD PLACEMENT 3 (budget-ad-slot-3): Within Educational Article (Early Section) ==================== -->
+<aside id="budget-ad-slot-3" class="ad-slot" data-ad-slot="ad-slot-3" data-ad-lazy="true" aria-label="Advertisement Placement 3">
+  <span class="ad-label">Advertisement</span>
+  <div class="ad-placeholder-inner">
+    <!-- PASTE AD NETWORK TAG / SCRIPT FOR BUDGET-AD-SLOT-3 HERE -->
+    <span>Reserved Ad Placement 3 (budget-ad-slot-3)</span>
+  </div>
+</aside>
+<!-- ==================== END AD PLACEMENT 3 (budget-ad-slot-3) ==================== -->
+        
+          <div class="seo-block">
+            <h2>Understanding the 20% Savings Category</h2>
+            <p>Your <strong>Savings &amp; Debt Payoff (20%)</strong> bucket is the engine of your future financial security. Every dollar allocated here either increases your net worth or reduces high-interest liabilities:</p>
+            <ul>
+              <li>Building and maintaining a 3-to-6 month liquid reserve (see our <a href="emergency-fund.html" class="seo-link" data-nav="emergency-fund">Emergency Fund Calculator</a>).</li>
+              <li>Contributions to retirement accounts (IRA, 401(k), or brokerage index funds).</li>
+              <li>Saving toward specific medium-term milestones using the <a href="savings-goal.html" class="seo-link" data-nav="savings-goal">Savings Goal Calculator</a>.</li>
+              <li>Extra principal payments above the minimum required payment on loans or credit cards.</li>
+            </ul>
+          </div>
+          <div class="seo-block">
+            <h2>How to Calculate Your Monthly Budget</h2>
+            <p>Start with your monthly after-tax income (if you are paid hourly or bi-weekly, our calculator automatically converts bi-weekly paychecks by multiplying by <code>26 ÷ 12 = 2.1667</code>, or you can check your gross-to-net figures in the <a href="hourly-to-salary.html" class="seo-link" data-nav="hourly-to-salary">Hourly to Salary Calculator</a>). Then multiply your monthly net income by each bucket's percentage share:</p>
+            <div class="formula-box">Needs = Net Income × 0.50 · Wants = Net Income × 0.30 · Savings = Net Income × 0.20</div>
+          </div>
+          <div class="seo-block">
+            <h2>How to Customize the 50/30/20 Rule</h2>
+            <p>Because housing costs, income levels, and personal goals vary widely, a single ratio does not fit every household. Our calculator includes instant presets and custom percentage inputs for common adaptations:</p>
+            <ul>
+              <li><strong>60/20/20 High Living Cost Split:</strong> Useful in high-rent metropolitan areas where essential housing and utilities temporarily consume 60% of net pay, trimming Wants to 20% while protecting the 20% Savings rate.</li>
+              <li><strong>50/20/30 Aggressive Saver / FIRE Split:</strong> Keeps Needs at 50%, limits Wants to 20%, and directs 30% of net pay toward rapid wealth accumulation or debt elimination.</li>
+            </ul>
+          </div>
+        
+        <!-- ==================== AD PLACEMENT 4 (budget-ad-slot-4): Within Educational Article (Later Section) ==================== -->
+<aside id="budget-ad-slot-4" class="ad-slot" data-ad-slot="ad-slot-4" data-ad-lazy="true" aria-label="Advertisement Placement 4">
+  <span class="ad-label">Advertisement</span>
+  <div class="ad-placeholder-inner">
+    <!-- PASTE AD NETWORK TAG / SCRIPT FOR BUDGET-AD-SLOT-4 HERE -->
+    <span>Reserved Ad Placement 4 (budget-ad-slot-4)</span>
+  </div>
+</aside>
+<!-- ==================== END AD PLACEMENT 4 (budget-ad-slot-4) ==================== -->
+        
+          <div class="seo-block">
+            <h2>Budgeting on a Low or Irregular Income</h2>
+            <p>If your income fluctuates from month to month due to freelance work, commissions, or seasonal hours, base your 50% Needs ceiling on your <strong>lowest reliable monthly income</strong> over the past 12 months. In higher-earning months, direct the surplus primarily into your 20% Savings and Emergency Fund bucket rather than locking yourself into higher fixed monthly bills.</p>
+          </div>
+          <div class="seo-block">
+            <h2>Practical Monthly Budget Examples</h2>
+            <ul>
+              <li><strong>$4,000 Monthly Net Income (50/30/20):</strong> Allocates <strong>$2,000</strong> to Essential Needs, <strong>$1,200</strong> to Lifestyle Wants, and <strong>$800/month</strong> ($9,600/year) to Savings and Debt Payoff.</li>
+              <li><strong>$5,500 Monthly Net Income (50/30/20):</strong> Allocates <strong>$2,750</strong> to Needs, <strong>$1,650</strong> to Wants, and <strong>$1,100/month</strong> ($13,200/year) to Savings.</li>
+              <li><strong>$2,500 Bi-Weekly Paycheck ($5,416.67/mo equivalent):</strong> Multiplying $2,500 × 26 paychecks ÷ 12 months yields $5,416.67/month, splitting into <strong>$2,708.33</strong> Needs, <strong>$1,625.00</strong> Wants, and <strong>$1,083.33</strong> Savings.</li>
+            </ul>
+          </div>
+          <div class="seo-block">
+            <h2>Common Budgeting Mistakes</h2>
+            <ul>
+              <li><strong>Classifying lifestyle upgrades as Needs:</strong> Counting dining out, premium cable packages, or luxury vehicle payments as 50% Needs rather than 30% Wants.</li>
+              <li><strong>Using gross income instead of net pay:</strong> Budgeting pre-tax salary causes an immediate shortfall because income and payroll taxes have already been withheld.</li>
+              <li><strong>Counting minimum debt payments as Savings:</strong> Minimum required loan payments belong in the 50% Needs bucket; only extra principal payments above the minimum count toward the 20% Savings &amp; Debt Payoff bucket.</li>
+            </ul>
+          </div>
+          <div class="seo-block">
+            <h2>Conclusion</h2>
+            <p>Treat the 50/30/20 framework as a diagnostic compass for your cash flow. Adjust the ratios to fit your local cost of living, automate your savings transfer on payday, and review your split whenever your income changes.</p>
+          </div>
+        
+      </article>
+      <section class="faq-section">
+      <h2 class="section-title" style="font-size:1.55rem;margin-bottom:0.35rem">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        
+        <details class="faq-item" open>
+          <summary>Should I use gross income or after-tax net income for the 50/30/20 budget?</summary>
+          <div class="faq-body"><p>Always use your after-tax net take-home income. If your employer deducts health insurance or retirement contributions directly from your paycheck, add those deductions back into the appropriate bucket (healthcare in Needs, retirement in Savings) or budget strictly from your net deposit.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Where do minimum debt payments go in the 50/30/20 rule?</summary>
+          <div class="faq-body"><p>Minimum required monthly payments on student loans, auto loans, mortgages, and credit cards go into the 50% Needs category because failing to pay them damages your credit and incurs penalties. Extra payments above the minimum go into the 20% Savings & Debt Payoff category.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>What if my essential Needs exceed 50% of my take-home pay?</summary>
+          <div class="faq-body"><p>In high-cost-of-living cities or early career stages, essential housing and groceries frequently reach 60% or 65% of net pay. Temporarily adjust your split (such as 60/20/20) by reducing discretionary Wants while keeping your Savings habit intact.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>How does the calculator convert bi-weekly paychecks into a monthly budget?</summary>
+          <div class="faq-body"><p>A bi-weekly schedule pays 26 times per year (not 24). The calculator multiplies your bi-weekly paycheck by 26 and divides by 12 (a factor of 2.1667) so your monthly budget accurately includes the two 'three-paycheck months' each year.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Does the 20% savings bucket include emergency fund contributions?</summary>
+          <div class="faq-body"><p>Yes. Building your 3-to-6 month emergency reserve, investing for retirement, and making accelerated debt principal payments all fall under the 20% Savings allocation.</p></div>
+        </details>
+      </div>
+    </section>
+      <!-- ==================== AD PLACEMENT 5 (budget-ad-slot-5): After Educational Content and FAQs, Before Footer ==================== -->
+<aside id="budget-ad-slot-5" class="ad-slot" data-ad-slot="ad-slot-5" data-ad-lazy="true" aria-label="Advertisement Placement 5">
+  <span class="ad-label">Advertisement</span>
+  <div class="ad-placeholder-inner">
+    <!-- PASTE AD NETWORK TAG / SCRIPT FOR BUDGET-AD-SLOT-5 HERE -->
+    <span>Reserved Ad Placement 5 (budget-ad-slot-5)</span>
+  </div>
+</aside>
+<!-- ==================== END AD PLACEMENT 5 (budget-ad-slot-5) ==================== -->
+      <section class="related-section" aria-label="Related Financial Calculators">
+        <h2 class="section-title" style="font-size:1.4rem">Related Financial Calculators</h2>
+        <div class="related-grid">
+          
+            <a href="emergency-fund.html" class="related-card">
+              <h3>Emergency Fund Calculator →</h3>
+              <p>Use your 50% Essential Needs total to calculate your 3-to-6 month safety net.</p>
+            </a>
+            <a href="savings-goal.html" class="related-card">
+              <h3>Savings Goal Calculator →</h3>
+              <p>Put your 20% monthly savings allocation to work toward a specific target.</p>
+            </a>
+            <a href="hourly-to-salary.html" class="related-card">
+              <h3>Hourly Wage to Salary Calculator →</h3>
+              <p>Calculate your monthly after-tax income from an hourly pay rate.</p>
+            </a>
+        </div>
+      </section>
+    </div>
+</main>
+<footer class="footer">
+  <div class="footer-inner">
+    <span><strong>Verdant · FinPulse</strong> · Private Browser-Based Financial Intelligence</span>
+    <div class="footer-links">
+      <a href="index.html" class="link-btn">index.html</a>
+      <a href="discount-calculator.html" class="link-btn">Discount</a>
+      <a href="hourly-to-salary.html" class="link-btn">Salary</a>
+      <a href="budget-splitter.html" class="link-btn">Budget</a>
+      <a href="tip-splitter.html" class="link-btn">Tip</a>
+      <a href="savings-goal.html" class="link-btn">Savings</a>
+      <a href="loan-calculator.html" class="link-btn">Loan</a>
+      <a href="emergency-fund.html" class="link-btn">Emergency</a>
+      <a href="sales-tax-calculator.html" class="link-btn">Sales Tax</a>
+      <a href="margin-calculator.html" class="link-btn">Margin</a>
+    </div>
+  </div>
+</footer>
+<button type="button" id="mobile-top-btn" class="mobile-fab-top" aria-label="Back to top">↑ Top</button>
+<div id="toast" class="toast"></div>
+<script>
+window.__currencySymbol = "$";
+try {
+  const savedCurr = localStorage.getItem("verdant_currency");
+  if (savedCurr) window.__currencySymbol = savedCurr;
+  const savedTheme = localStorage.getItem("verdant_theme") || "dark";
+  document.documentElement.setAttribute("data-theme", savedTheme);
+} catch (e) {}
+
+function fmtMoney(n) {
+  if (!isFinite(n)) n = 0;
+  const sign = n < 0 ? "-" : "";
+  const sym = window.__currencySymbol || "$";
+  return sign + sym + Math.abs(n).toLocaleString("en-US", {minimumFractionDigits: 2, maximumFractionDigits: 2});
+}
+function fmtPct(n) {
+  if (!isFinite(n)) n = 0;
+  return n.toFixed(2) + "%";
+}
+function num(id) {
+  const el = document.getElementById(id);
+  if (!el) return 0;
+  const v = parseFloat(el.value);
+  return isFinite(v) ? v : 0;
+}
+function setTxt(id, val) {
+  const el = document.getElementById(id);
+  if (el) el.textContent = val;
+}
+function showToast(msg) {
+  const t = document.getElementById("toast");
+  if (!t) return;
+  t.textContent = msg;
+  t.classList.add("show");
+  clearTimeout(window.__toastTimer);
+  window.__toastTimer = setTimeout(() => t.classList.remove("show"), 1900);
+}
+function copyText(txt) {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(txt).then(() => showToast("Copied to clipboard")).catch(() => fallbackCopy(txt));
+  } else {
+    fallbackCopy(txt);
+  }
+}
+function fallbackCopy(txt) {
+  const ta = document.createElement("textarea");
+  ta.value = txt;
+  ta.style.position = "fixed";
+  ta.style.opacity = "0";
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand("copy"); showToast("Copied to clipboard"); } catch (e) {}
+  document.body.removeChild(ta);
+}
+function syncPrefixes() {
+  const sym = window.__currencySymbol || "$";
+  document.querySelectorAll(".prefix").forEach(el => { el.textContent = sym; });
+}
+function recalcAll() {
+  syncPrefixes();
+  if (typeof calcDiscount === "function" && document.getElementById("dc-price")) calcDiscount();
+  if (typeof calcHourly === "function" && document.getElementById("hs-rate")) calcHourly();
+  if (typeof calcBudget === "function" && document.getElementById("bg-inc")) calcBudget();
+  if (typeof calcTip === "function" && document.getElementById("tp-bill")) calcTip();
+  if (typeof calcSavings === "function" && document.getElementById("sg-goal")) calcSavings();
+  if (typeof calcLoan === "function" && document.getElementById("ln-amt")) calcLoan();
+  if (typeof calcEmergency === "function" && document.getElementById("ef-house")) calcEmergency();
+  if (typeof calcSalesTax === "function" && document.getElementById("st-amt")) calcSalesTax();
+  if (typeof calcMargin === "function" && document.getElementById("mg-cost")) calcMargin();
+}
+function initThemeAndCurrency() {
+  const tBtn = document.getElementById("theme-toggle");
+  const curTheme = document.documentElement.getAttribute("data-theme") || "dark";
+  if (tBtn) tBtn.textContent = curTheme === "dark" ? "◐ Light Mode" : "◑ Dark Mode";
+  if (tBtn) {
+    tBtn.addEventListener("click", () => {
+      const next = (document.documentElement.getAttribute("data-theme") || "dark") === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      tBtn.textContent = next === "dark" ? "◐ Light Mode" : "◑ Dark Mode";
+      try { localStorage.setItem("verdant_theme", next); } catch (e) {}
+    });
+  }
+  const cSel = document.getElementById("currency-select");
+  if (cSel) {
+    cSel.value = window.__currencySymbol || "$";
+    cSel.addEventListener("change", () => {
+      window.__currencySymbol = cSel.value;
+      try { localStorage.setItem("verdant_currency", cSel.value); } catch (e) {}
+      recalcAll();
+    });
+  }
+  syncPrefixes();
+}
+initThemeAndCurrency();
+
+const mobMenuBtn = document.getElementById("mobile-menu-btn");
+const navCap = document.getElementById("primary-nav-capsule");
+if (mobMenuBtn && navCap) {
+  mobMenuBtn.addEventListener("click", () => {
+    const isOpen = navCap.classList.toggle("mobile-open");
+    mobMenuBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    mobMenuBtn.textContent = isOpen ? "✕" : "☰";
+  });
+}
+const mobTopBtn = document.getElementById("mobile-top-btn");
+if (mobTopBtn) {
+  window.addEventListener("scroll", () => {
+    mobTopBtn.classList.toggle("visible", window.scrollY > 360);
+  });
+  mobTopBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+}
+
+function calcBudget() {
+  const raw = Math.max(0, num("bg-inc"));
+  const rEl = document.getElementById("bg-inc-range");
+  if (rEl && parseFloat(rEl.value) !== raw) rEl.value = Math.min(20000, raw);
+  const mult = parseFloat(document.getElementById("bg-freq").value) || 1;
+  const mo = raw * mult;
+  let nPct = Math.max(0, num("bg-n"));
+  let wPct = Math.max(0, num("bg-w"));
+  let sPct = Math.max(0, num("bg-s"));
+  const sum = nPct + wPct + sPct;
+  setTxt("bg-sum-hint", "Total: " + sum.toFixed(0) + "%");
+  const norm = sum > 0 ? sum : 100;
+  const nAmt = mo * (nPct / norm);
+  const wAmt = mo * (wPct / norm);
+  const sAmt = mo * (sPct / norm);
+  setTxt("bg-out-mo", fmtMoney(mo));
+  setTxt("bg-out-yr", "Annual Net Budget: " + fmtMoney(mo * 12));
+  setTxt("bg-out-n", fmtMoney(nAmt) + "/mo");
+  setTxt("bg-out-w", fmtMoney(wAmt) + "/mo");
+  setTxt("bg-out-s", fmtMoney(sAmt) + "/mo");
+  setTxt("bg-out-s-yr", fmtMoney(sAmt * 12) + "/yr");
+  const nw = (nPct / norm) * 100, ww = (wPct / norm) * 100, sw = (sPct / norm) * 100;
+  document.getElementById("bg-bar-n").style.width = nw + "%";
+  document.getElementById("bg-bar-w").style.width = ww + "%";
+  document.getElementById("bg-bar-s").style.width = sw + "%";
+  setTxt("bg-leg-n", "Needs: " + nw.toFixed(0) + "%");
+  setTxt("bg-leg-w", "Wants: " + ww.toFixed(0) + "%");
+  setTxt("bg-leg-s", "Savings: " + sw.toFixed(0) + "%");
+}
+["bg-inc","bg-freq","bg-n","bg-w","bg-s"].forEach(id => {
+  document.getElementById(id).addEventListener("input", calcBudget);
+  document.getElementById(id).addEventListener("change", calcBudget);
+});
+const bgRange = document.getElementById("bg-inc-range");
+if (bgRange) {
+  bgRange.addEventListener("input", () => {
+    document.getElementById("bg-inc").value = bgRange.value;
+    calcBudget();
+  });
+}
+document.querySelectorAll("#bg-presets .chip").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll("#bg-presets .chip").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    document.getElementById("bg-n").value = btn.dataset.n;
+    document.getElementById("bg-w").value = btn.dataset.w;
+    document.getElementById("bg-s").value = btn.dataset.s;
+    calcBudget();
+  });
+});
+document.getElementById("bg-reset").addEventListener("click", () => {
+  document.getElementById("bg-inc").value = 5500;
+  document.getElementById("bg-freq").value = "1";
+  document.getElementById("bg-n").value = 50;
+  document.getElementById("bg-w").value = 30;
+  document.getElementById("bg-s").value = 20;
+  calcBudget();
+});
+document.getElementById("bg-copy").addEventListener("click", () => {
+  copyText("Budget Split (" + document.getElementById("bg-out-mo").textContent + "): Needs " + document.getElementById("bg-out-n").textContent + ", Wants " + document.getElementById("bg-out-w").textContent + ", Savings " + document.getElementById("bg-out-s").textContent);
+});
+calcBudget();
+</script>
+</body>
+</html>
